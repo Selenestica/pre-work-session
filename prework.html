@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head></head>
-  <body>
+  <body id="body">
     <div>Hi class!</div>
     <div>How y'all doin tonight?</div>
   </body>
+  <script>
+    body = document.getElementById("body");
+    body.innerHTML =
+      "<ul><li><a href='url'></a></li></ul><div>Hi class!</div><div>How y'all doin tonight?</div>";
+  </script>
 </html>
