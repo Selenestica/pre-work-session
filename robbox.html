@@ -1,0 +1,18 @@
+<body>
+  <button id="myButton">Click Me</button>
+  <div class="box">Make this div blue when you click the button</div>
+  <div class="box">Make this div blue when you click the button</div>
+  <div class="box">Make this div blue when you click the button</div>
+  <script src="scripty.js"></script>
+  <script>
+    var button = document.getElementById("myButton");
+    var boxB = document.getElementsByClassName("box");
+    console.log(boxB);
+
+    button.addEventListener("click", function () {
+      for (let i = 0; i < boxB.length; i++) {
+        boxB[i].style = "background-color: blue;";
+      }
+    });
+  </script>
+</body>
